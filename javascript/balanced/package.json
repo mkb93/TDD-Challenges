@@ -1,0 +1,12 @@
+{
+  "name": "balanced-test",
+  "version": "1.0.0",
+  "description": "",
+  "type": "module",
+  "main": "Balanced.js",
+  "scripts": {
+    "test": "test"
+  },
+  "author": "",
+  "license": "ISC"
+}
