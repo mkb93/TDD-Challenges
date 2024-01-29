@@ -1,0 +1,14 @@
+{
+  "name": "moves-in-squared-strings",
+  "version": "1.0.0",
+  "description": "This kata is the first of a sequence of four about \"Squared Strings\".",
+  "main": "squared-strings.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "jest": "^29.7.0"
+  }
+}
