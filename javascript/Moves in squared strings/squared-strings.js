@@ -1,6 +1,6 @@
 function vertMirror(str) {
   console.log(str);
-  return "dcba\nhgfe\nlkji\nponm";
+  return "adsa";
 }
 function horMirror(strng) {
   // the plan is to seperate the larger string into smaller strings by /n
