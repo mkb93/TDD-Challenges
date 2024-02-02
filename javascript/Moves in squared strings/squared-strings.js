@@ -1,6 +1,11 @@
 function vertMirror(str) {
-  console.log(str);
-  return "adsa";
+  const answer = [];
+
+  str.split("").forEach((letter) => {
+    answer.unshift(letter);
+  });
+
+  return answer.join("");
 }
 function horMirror(strng) {
   // the plan is to seperate the larger string into smaller strings by /n
