@@ -1,11 +1,15 @@
 function vertMirror(str) {
+  const strArray = str.split("\n");
   const answer = [];
-
-  str.split("").forEach((letter) => {
-    answer.unshift(letter);
+  strArray.forEach((string) => {
+    let letterArray = [];
+    string.split("").forEach((letter) => {
+      letterArray.unshift(letter);
+    });
+    let reversedString = letterArray.join("");
+    answer.push(reversedString);
   });
-
-  return answer.join("");
+  return answer.join("\n");
 }
 function horMirror(strng) {
   // the plan is to seperate the larger string into smaller strings by /n
