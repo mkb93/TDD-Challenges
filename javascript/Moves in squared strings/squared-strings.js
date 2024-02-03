@@ -12,7 +12,7 @@ function vertMirror(str) {
   return answer.join("\n");
 }
 function horMirror(strng) {
-  return strng;
+  return strng.split("\n").reverse().join("\n");
 }
 function oper(func, s) {
   // the plan is to use the first argument func
@@ -21,6 +21,6 @@ function oper(func, s) {
   return func(s);
 }
 
-vertMirror("abcd\nefgh\nijkl\nmnop");
+console.log(horMirror("abcd\nefgh\nijkl\nmnop"));
 
 module.exports = { vertMirror, horMirror, oper };

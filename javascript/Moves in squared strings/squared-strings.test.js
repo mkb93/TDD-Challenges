@@ -20,6 +20,6 @@ describe("is the horMirror function reveresing the position of the strings in th
   });
 
   test("expect two strings to switch order", () => {
-    expect(oper(vertMirror, "forget\ntable")).toBe("table\nforget");
+    expect(oper(horMirror, "forget\ntable")).toBe("table\nforget");
   });
 });
