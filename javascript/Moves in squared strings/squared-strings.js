@@ -12,9 +12,7 @@ function vertMirror(str) {
   return answer.join("\n");
 }
 function horMirror(strng) {
-  // the plan is to seperate the larger string into smaller strings by /n
-  // reverse the order of the elements in the Array
-  // then rejoin it and return it
+  return strng;
 }
 function oper(func, s) {
   // the plan is to use the first argument func
