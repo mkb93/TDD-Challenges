@@ -18,10 +18,8 @@ describe("is the horMirror function reveresing the position of the strings in th
   test("'asda' returns 'asda'", () => {
     expect(oper(horMirror, "asda")).toBe("asda");
   });
-  // test("expect 'forget' to be reversed", () => {
-  //   expect(oper(vertMirror, "forget")).toBe("tegrof");
-  // });
-  // test("expect all the individual strings seperated by \n to be reversed", () => {
-  //   expect(oper(vertMirror, "forget\ntable")).toBe("tegrof\nelbat");
-  // });
+
+  test("expect two strings to switch order", () => {
+    expect(oper(vertMirror, "forget\ntable")).toBe("table\nforget");
+  });
 });
