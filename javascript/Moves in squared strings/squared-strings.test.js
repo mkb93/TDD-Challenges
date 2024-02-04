@@ -25,6 +25,9 @@ describe("is the horMirror function reveresing the position of the strings in th
   test("expect two strings to switch order", () => {
     expect(oper(horMirror, "forget\ntable")).toBe("table\nforget");
   });
+  test("expect empty string to return empty string", () => {
+    expect(oper(horMirror, "")).toBe("");
+  });
 
   // test("expect more than two  strings to switch order", () => {
   //   expect(oper(horMirror, "forget\ntable")).toBe("table\nforget");
