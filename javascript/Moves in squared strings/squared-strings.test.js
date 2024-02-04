@@ -29,7 +29,17 @@ describe("is the horMirror function reveresing the position of the strings in th
     expect(oper(horMirror, "")).toBe("");
   });
 
-  // test("expect more than two  strings to switch order", () => {
-  //   expect(oper(horMirror, "forget\ntable")).toBe("table\nforget");
-  // });
+  test("expect  up to 100  strings to switch order by checking if first string changes to second string", () => {
+    const randomNum = Math.floor(Math.random() * 101);
+    const testString1 = "food";
+    const testString2 = "old";
+    const array1 = Array(randomNum).fill(testString1);
+    const array2 = Array(randomNum).fill(testString2);
+    const testString = array1.concat(array2).join("\n");
+
+    const letter1 = "o";
+    expect(oper(horMirror, testString)[0]).toBe("o");
+    expect(oper(horMirror, testString)[1]).toBe("l");
+    expect(oper(horMirror, testString)[2]).toBe("d");
+  });
 });
